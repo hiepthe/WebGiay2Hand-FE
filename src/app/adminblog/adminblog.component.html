@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <app-admin-header></app-admin-header>
+  <div class="main-panel">
+  <div class="content">
+    <div class="container-fluid">
+      <!---->
+      <div class="alert alert-success">
+        <span>BLOG ĐÃ ĐĂNG</span>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-tabs card-header-primary">
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <span class="nav-tabs-title">Sửa/Xóa Blog</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning">
+        <span>THÊM BLOG</span>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title">Add Blog</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <button
+                type="submit"
+                class="btn btn-primary pull-right"
+                (click)="openDialog()"
+              >
+                Thêm Blog
+              </button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

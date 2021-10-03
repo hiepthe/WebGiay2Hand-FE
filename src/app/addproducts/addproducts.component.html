@@ -1,0 +1,76 @@
+<div class="wrapper">
+  <app-admin-header></app-admin-header>
+  <div class="main-panel">
+    <div class="content">
+      <div class="container-fluid">
+        <!---->
+        <div class="alert alert-success">
+          <span>SẢN PHẨM ĐÃ ĐĂNG</span>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-tabs card-header-primary">
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <span class="nav-tabs-title">Tìm kiếm sản phẩm</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active" id="profile"></div>
+              </div>
+              <div class="container mt-3">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <select name="brand" class="custom-select mb-3">
+                        <option selected>Thương hiệu</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="tên sản phẩm"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary pull-right">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title">Thêm sản phẩm</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <button
+                  type="submit"
+                  class="btn btn-primary pull-right"
+                  (click)="openDialog()"
+                >
+                  Save
+                </button>
+                <div class="clearfix"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

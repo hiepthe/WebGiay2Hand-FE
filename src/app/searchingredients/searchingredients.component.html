@@ -1,0 +1,324 @@
+
+
+                  <div id="PageContainer"></div>
+                  <div class="quick-view"></div>
+                  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left " id="cbp-spmenu-s1">
+                     <div class="gf-menu-device-wrapper">
+                        <div class="close-menu">x</div>
+                        <div class="gf-menu-device-container"></div>
+                     </div>
+                  </nav>
+                  <div class="wrapper-container">
+                     <div class="header-type-9">
+                        <div class="">
+                           <div id="header-landing" class="sticky-animate">
+                              <div id="shopify-section-header-model-9" class="shopify-section">
+
+                                 <app-header></app-header>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  <main class="main-content">
+
+
+
+<div class="dt-sc-hr-invisible-large"></div>
+
+
+    <div class="wrapper">
+
+      <div class="grid-uniform">
+        <div class="grid__item">
+
+          <div class="container">
+
+            <div class="container">
+<div class="grid">
+
+  <div class="grid__item text-center">
+
+
+    <div class="note form-success" id="ResetSuccess" style="display:none;">
+      We&#39;ve sent you an email with a link to update your password.
+    </div>
+
+    <div id="CustomerLoginForm">
+      <form><input type="hidden" name="utf8" value="✓" />
+
+        <label for="CustomerEmail" class="label--hidden">Search Ingredients</label>
+        <input type="text" class="form-control" required="required" >
+
+
+
+        <p>
+          <button type="submit" class="btn"  > TÌM KIẾM</button>
+        </p>
+        <mat-card class="example-card center">
+         <br>
+         <br>
+         <br>
+
+         <br>
+         <mat-card-header>
+
+           <mat-card-title style="font-size: 60px; color: rgb(33, 5, 59); line-height: 2px; margin-left: 100px;"></mat-card-title>
+
+         </mat-card-header>
+         <mat-card-content>
+         <br>
+           <button class="btn" style="background-color:rgb(21, 138, 17); font-size:18px;"> Chỉ số kích ứng: </button>
+
+         </mat-card-content>
+         <mat-card-content>
+         <br>
+         <h2 style="font-size: 20px;font-style: italic;"> Công dụng: </h2>
+         <button class="button1" style=" font-size:18px;"></button>
+
+         </mat-card-content>
+         <mat-card-content>
+            <br>
+            <h2 style="font-size: 20px;font-style: italic;"> Mô tả chi tiết: </h2>
+           <button class="button2">
+           </button>
+           <br>
+         </mat-card-content>
+         <br>
+         <br>
+       </mat-card>
+
+
+      </form>
+
+    </div>
+
+
+    <div id="RecoverPasswordForm" style="display: none;">
+
+      <div class="section-header section-header--small">
+        <h2 class="section-header__title">Reset your password</h2>
+      </div>
+      <p>We will send you an email to reset your password.</p>
+
+
+      <form method="post" action="/account/recover" accept-charset="UTF-8"><input type="hidden" name="form_type" value="recover_customer_password" /><input type="hidden" name="utf8" value="✓" />
+
+
+
+
+
+
+        <label for="RecoverEmail" class="label--hidden">Email</label>
+        <input type="email" value="" name="email" id="RecoverEmail" placeholder="Email" autocorrect="off" autocapitalize="off">
+
+        <p>
+          <input type="submit" class="btn" value="Submit">
+        </p>
+        <a href="#" onclick="hideRecoverPasswordForm();return false;">Cancel</a>
+      </form>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+</div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="dt-sc-hr-invisible-large"></div>
+
+  </main>
+
+
+
+  <div id="shopify-section-footer-model-5" class="shopify-section">
+     <div data-section-id="footer-model-5"  data-section-type="Footer-model-5" class="footer-model-5">
+  <app-footer></app-footer>
+</div>
+</div>
+
+
+  <!-- Begin quick-view-template -->
+<div class="clearfix" id="quickview-template" style="display:none">
+  <div class="overlay"></div>
+  <div class="content clearfix">
+    <div class="product-img images">
+      <div class="quickview-featured-image product-photo-container"></div>
+      <div class="more-view-wrapper">
+        <ul class="product-photo-thumbs quickview-more-views-owlslider owl-carousel owl-theme">
+        </ul>
+        <div class="quick-view-carousel"></div>
+      </div>
+    </div>
+    <div class="product-shop summary">
+      <div class="product-item product-detail-section">
+        <h2 class="product-title"><a>&nbsp;</a></h2>
+
+        <p class="item-text product-description"></p>
+
+        <div class="prices product_price">
+          <label>Effective Price :</label>
+          <div class="price h4" id="QProductPrice"></div>
+          <div class="compare-price" id="QComparePrice"></div>
+        </div>
+
+        <div class="product-infor">
+          <p class="product-inventory"><label>Availability :</label><span></span></p>
+        </div>
+
+        <div class="details clearfix">
+          <form action="/cart/add" method="post" class="variants">
+            <select name='id' style="display:none"></select>
+            <div class="qty-section quantity-box">
+              <label>Quantity :</label>
+              <div class="dec button qtyminus">-</div>
+              <input type="number" name="quantity" id="Qty" value="1" class="quantity">
+              <div class="inc button qtyplus">+</div>
+            </div>
+
+
+            <div class="total-price">
+              <label>Subtotal :</label><span class="h5"></span>
+            </div>
+
+            <div class="actions">
+                <button type="button" class="add-to-cart-btn btn">
+                  Add to Cart
+                </button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ <a href="javascript:void(0)" class="close-window"></a>
+  </div>
+
+</div>
+
+  <div class="loading-modal compare_modal">Loading</div>
+<div class="ajax-success-compare-modal compare_modal" id="moda-compare" tabindex="-1" role="dialog" style="display:none">
+  <div class="overlay"> </div>
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content content" id="compare-modal">
+        <div class="modal-header">
+
+          <h4 class="modal-title">Compare Products</h4>
+        </div>
+        <div class="modal-body">
+          <div class="table-wrapper">
+            <table class="table table-hover">
+              <thead>
+                <tr class="th-compare">
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="table-compare">
+
+              </tbody>
+
+            </table>
+           </div>
+        </div>
+        <div class="modal-footer">
+           <a href="javascript:void(0)" class="close-modal"><i class="far fa-times-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="loading-modal modal">Loading</div>
+<div class="ajax-error-modal modal">
+  <div class="modal-inner">
+    <div class="ajax-error-title">Error</div>
+    <div class="ajax-error-message"></div>
+  </div>
+</div>
+<div class="ajax-success-modal modal">
+  	<div class="overlay"></div>
+	<div class="content">
+
+
+      <div class="ajax-left">
+        <p class="added-to-cart info">Product successfully added to your shopping cart</p>
+      <p class="added-to-wishlist info">translation missing: en.products.wishlist.added_to_wishlist</p>
+      <img class="ajax-product-image" alt="modal window" src="/" />
+       <div class="ajax-cart-desc">
+        <h3 class="ajax-product-title"></h3>
+        <span class="ajax_price"></span>
+        <p>Qty:&nbsp;<span class="ajax_qty"></span></p>
+        </div>
+      </div>
+      <div class="ajax-right">
+
+        <p>There are <span class="ajax_cartCount"></span>&nbsp;item(s) in your cart</p>
+        <span class="ajax_cartTotal"></span>
+          <button class="btn continue-shopping" onclick="javascript:void(0)">Continue shopping</button>
+        <div class="success-message added-to-cart"><a href="/cart" class="btn"><i class="fas fa-shopping-cart"></i>View Cart</a> </div>
+      <!--  <div class="success-message added-to-wishlist"> <a href="/pages/wishlist" class="btn"><i class="fa fa-heart"></i>View Wishlist</a></div>                -->
+      </div>
+    <a href="javascript:void(0)" class="close-modal"><i class="far fa-times-circle"></i></a>
+ 	</div>
+</div>
+
+
+<div class="newsletterwrapper">
+  <div id="email-modal" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-window" style="display: none;">
+      <div class="window-window">
+          <a class="btn close" title="Close Window"></a>
+
+
+
+
+            <div class="window-content">
+          <div class="newsletter-title">
+         <h2 class="title">Get to know the latest offers</h2>
+          </div>
+           <p class="message">Subscribe and get notified at first on the latest update and offers!</p>
+          <div id="mailchimp-email-subscibe">
+            <div id="mc_embed_signup">
+
+
+<form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+
+
+  <input type="email" value="" placeholder="Email address" name="contact[email]" class="mail" aria-label="Email address" >
+  <input type="hidden" name="contact[tags]" value="newsletter">
+  <button type="submit" class="btn" name="subscribe" value=""  id="subscribe" >Send</button>
+
+
+
+</form>
+
+            </div>
+            <span>We do not spam</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
